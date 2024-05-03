@@ -6,17 +6,12 @@ public class TestaCliente {
 	
 	public static void main(String[] args) {
 		
-		Cliente cliente = new Cliente();
+		Cliente cliente = new Cliente("Patricia Borges", "123.456.789-10");
 		
-		cliente.nome = "GlobalCode";
-		cliente.cpf = "123154";
-		
-		System.out.println("----------------------------");
-		System.out.println("NOME: " + cliente.nome + "     CPF: " + cliente.cpf);
-		System.out.println("----------------------------");
+		System.out.println("---------------------------------");
+		System.out.println("NOME: " + cliente.getNome() + "     CPF: " + cliente.getCpf());
+		System.out.println("---------------------------------");
 
-		
-		
 	}
 
 }
